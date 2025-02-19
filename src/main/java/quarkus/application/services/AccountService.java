@@ -17,7 +17,6 @@ public class AccountService implements IAccountService {
     public AccountFlaskInfo getAccount(Account account) {
         Long accountId = account.getAccountId();
         System.out.println(accountId);
-        adapterFlask.getAccount(accountId);
-        return null;
+        return adapterFlask.getAccount(accountId);
     }
 }
